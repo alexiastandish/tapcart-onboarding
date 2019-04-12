@@ -29,7 +29,6 @@ const Image = styled.img`
 
 class Meme extends Component {
   render() {
-    console.log('this.props', this.props)
     return (
       <Draggable draggableId={this.props.meme.id} index={this.props.index}>
         {(provided, snapshot) => (

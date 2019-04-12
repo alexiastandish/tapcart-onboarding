@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { useContext } from 'react'
 //import './Column.css';
 import styled from 'styled-components'
 import Meme from './Meme'
@@ -30,7 +31,7 @@ const MemeList = styled.div`
 class Column extends Component {
   render() {
     return (
-      <Container>
+      <Container style={{}}>
         <Title>
           {/* <div className="dnd__column"> */}
           {this.props.column.title}

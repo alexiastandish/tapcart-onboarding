@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useContext, useReducer } from 'react'
+
 import ReactDOM from 'react-dom'
 import DragAndDrop from './components/DragAndDrop'
+import ColorPicker from './components/ColorPicker'
 import initialData from './initialData'
 import './sass/main.scss'
 
 const App = () => {
-  return <DragAndDrop data={initialData} />
+  return (
+    <>
+      <DragAndDrop data={initialData} />
+      <ColorPicker />
+    </>
+  )
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
